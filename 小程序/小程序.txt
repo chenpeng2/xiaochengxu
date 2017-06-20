@@ -1,0 +1,24 @@
+1，View/Image/Text 等组件
+2，小程序自适应单位RPX
+3，小程序组件只有text包围，才能在手机长按选中
+4，用px是iphone6的物理像素，是2:1的关系
+5，text的\是换行
+6，iphone plus px达到了人眼的分辨率，最大 2x，设计图都是物理分辨率
+7，缓存最大10M
+====>
+1,水平rpx，垂直px
+2，小程序没click，，tap  bindtap 或者catchtap，catchtap阻止冒泡
+3，  wx.navigateTo 平行跳转
+4， wx.redirectTo 不是平行的，初始化的界面跳到新页面不能返回
+5， //按住alt + shift + F 可以格式化代码样式
+6，模板文件只需要wxml和wxss
+7,小程序异步用的少
+1,template用绝对路径，相对路径可能造成获取不到
+2，tabbar底部tab，，-框架-配置
+navigateTo 在tab切换时保持下面不消失
+2，3层嵌套 template
+3,使用模板
+使用 is 属性，声明需要的使用的模板，然后将模板所需要的 data 传入，如：
+
+<template is="msgItem" data="{{...item}}"/>
+is="starsTemplate" 单个import可以不写
